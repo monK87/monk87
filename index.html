@@ -2,21 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Download test</title>
+    <title>Tablet Test</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 1.625rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    h2.h-bold {
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+
+    h6 {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    .gradient {
+        background: linear-gradient(294deg, #00BEB3 32.43%, #001E87 100%);
+        color: white;
+        padding: 1rem;
+    }
+
+    .gradient .box {
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.15);
+        padding: 2rem;
+        margin-inline: 4rem;
+        margin-block: 2rem;
+    }
+
+    .gradient button {
+        border-radius: 0.25rem;
+        background: #FEAB10;
+        color: #282828;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5rem;
+        letter-spacing: 0.00875rem;
+        height: 2.5rem;
+        padding-inline: 1rem;
+        border: 0;
+
+        margin-top: 1rem;
+    }
+
+    .qr {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .qr img {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-left: 1rem;
+    }
+
+    body > button {
+        border-radius: 0.25rem;
+        border: 1px solid #4855D4;
+        background: #FFF;
+        display: flex;
+        height: 3rem;
+        padding: 0 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+
+        color: #4855D4;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        /* H4/Semi-bold */
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.625rem;
+
+        margin: 1rem;
+    }
+
+    .book {
+        width: 19.625rem;
+
+    }
+</style>
 <body>
-    <h2>Webview download test</h2>
-    <p>@Hafidz: base64 link: <a download="test.pdf" href="data:application/pdf;base64,JVBERi0xLjIgCjkgMCBvYmoKPDwKPj4Kc3RyZWFtCkJULyA5IFRmKFRlc3QpJyBFVAplbmRzdHJlYW0KZW5kb2JqCjQgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCA1IDAgUgovQ29udGVudHMgOSAwIFIKPj4KZW5kb2JqCjUgMCBvYmoKPDwKL0tpZHMgWzQgMCBSIF0KL0NvdW50IDEKL1R5cGUgL1BhZ2VzCi9NZWRpYUJveCBbIDAgMCA5OSA5IF0KPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1BhZ2VzIDUgMCBSCi9UeXBlIC9DYXRhbG9nCj4+CmVuZG9iagp0cmFpbGVyCjw8Ci9Sb290IDMgMCBSCj4+CiUlRU9G">base64</a></p>
-    <p>Try to download this <a href="foo.pdf">Foo PDF</a>.</p>
-    <p>Try to download this <a href="foo.pdf">Bar PDF</a>.</p>
-    <p>Try to download this <a href="foobar.zip">Foobar ZIP</a>.</p>
-    <p>Try to download this <a download="blob.txt" id="blob_link" href="#">blob</a></p>
-    <p>Go to the <a href="second.html">second page</a>.</p>
-    
-    <script>
-    let blob = new Blob(["Hello, world!"], {type: 'text/plain'});
-    blob_link.href = URL.createObjectURL(blob);
-    </script>
+<div class="gradient">
+    <div class="box">
+        <h1>Header 4rem 300 - Available</h1>
+        <h2 class="h-bold">Header 1.625rem bold - until 9:00am</h2>
+    </div>
+
+    <h2>Header 1.625rem semi-bold - [08-02] Ba Long Long</h2>
+    <h4>1.125rem semi-bold - 4 pax</h4>
+    <h4>1.125rem semi-bold - This ain't a song for the broken-heartedNo silent prayer for faith-departed And I ain't
+        gonna be just a face in the crowdYou're gonna hear my voice when I shout it out loud</h4>
+
+    <h6>0.875rem semi-bold - Up next at 9:00am – 9:15am</h6>
+
+    <div class="qr">
+        <p>For room details, <br/>scan QR code</p>
+        <img src="qrcode.png" alt="qr code"/>
+    </div>
+
+    <button>Check in early</button>
+</div>
+
+<button class="book">Make a booking</button>
+
+<button onClick="window.location.reload();">
+    <span class="material-symbols-outlined">refresh</span>
+</button>
+
+<script>
+</script>
 </body>
 </html>
-
